@@ -15,7 +15,7 @@ module.exports = {
     },
 
     fontFamily: {
-      'sans': ['noto-sans', 'system-ui'],
+      //'sans': ['noto-sans', 'system-ui'],
       'serif': ['ui-serif', 'Georgia'],
       //'mono': ['ui-monospace', 'SFMono-Regular'],
       'display': ['Noto sans display'], //'Google Sans Display-Medium'
@@ -35,6 +35,9 @@ module.exports = {
         },
     },
     extend: {
+      fontFamily: {
+        sans: ['var(--font-displayFont)']
+      }
       // 'colors': {
       //   // Configure your color palette here these are defaulr colors
       //   transparent: 'transparent',
@@ -57,10 +60,10 @@ module.exports = {
       //   },
       // },
 
-      backgroundImage: {
+      //backgroundImage: {
         //'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         //'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      //},
     },
   },
   plugins: [],
